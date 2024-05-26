@@ -171,6 +171,8 @@ AWS Secret Access Key [None]: YOUR_SECRET_ACCESS_KEY
 Default region name [None]: YOUR_DEFAULT_REGION
 Default output format [None]: json
 ```
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/6161e78a-99bf-44e7-a5cd-11008db41ca8)
+
 ### Once the Cluster is ready run the command to set context:
 
 <pre>
