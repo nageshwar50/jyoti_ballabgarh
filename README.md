@@ -125,6 +125,8 @@ Once the IAM role is created, you can use it when setting up your Amazon EKS clu
 ![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/dae3f8dc-216c-4e0c-8891-5a9186b33464)
 
 ### EKS may take 10-15 minutes to reach the active state.
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/4bde76f3-916b-4534-8997-1587e5ba6b55)
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/8d711a62-3610-41d6-a1e1-bba1015048e3)
 
 ## Adding Worker Nodes with IAM Role
 
@@ -172,30 +174,43 @@ Default region name [None]: YOUR_DEFAULT_REGION
 Default output format [None]: json
 ```
 ![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/6161e78a-99bf-44e7-a5cd-11008db41ca8)
+*********************
+###  Lets push the Docker Image to  ECR Repository
+
+1. Log in to the AWS Management Console.
+2. Navigate to the **ECR** service.
+3. Click on **Create repository**.
+4. Provide a name for your repository.
+5. Choose any additional settings as needed.
+6. Click **Create repository**.
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/af5f1a27-9f1b-4316-a4cb-cf00e3bd5e0f)
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/26e473fc-3689-4e2e-90fa-a134dadce7bc)
+
 
 ### Once the Cluster is ready run the command to set context:
 
 <pre>
-  aws eks update-kubeconfig --name eks-handson --region ap-south-1
+  aws eks update-kubeconfig --name jyoti_ballabgarh --region ap-south-1
 </pre>
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/4fec36d3-ec77-4c0a-bc92-71e4045f42bd)
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/9d383d8e-8f7b-4d1a-9401-8e9aee6843c7)
 
-<pre> kubectl create namespace pandey </pre>
-<pre> kubectl get svc -n pandey </pre>
-<pre> kubectl apply -f deployment.yaml -n pandey </pre>
-<pre>kubectl get deployments -n pandey   </pre>
+<pre> kubectl apply -f namespace.yaml </pre>
+<pre> kubectl apply -f deployment.yaml </pre>
 <pre> kubectl apply -f service.yaml -n pandey </pre>
-<pre>  kubectl get services -n pandey </pre>
-<pre> kubectl apply -f ingress.yaml -n pandey </pre>
-<pre> kubectl get ingress -n pandey </pre>
+<pre>kubectl apply -f ingress.yaml   </pre>
+<pre> kubectl get svc -n jyoti-app </pre>
+<pre> kubectl get services -n jyoti-app </pre>
+<pre> kubectl get ingress -n jyoti-app </pre>
+<pre> kubectl get all -n jyoti-app </pre>
 
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/02191b32-c4dc-4d20-97af-3f0d7388d0eb)
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/a3a4ebf9-953a-4ff9-afb2-47eeb2bbce3a)
-
-<pre> kubectl get pods -n pandey -o wide </pre>
-<pre> kubectl describe pod frontend-6b5b54c879-q8qwz -n pandey </pre>
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/08e8ee07-4931-417a-bf41-545131c35b2d)
-
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/943a177a-7122-4d9b-a2d9-53230530f66f)
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/3e70a6e3-a68b-4eee-bf9c-97e4923582cf)
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/df33220a-252c-455b-9494-ae9a225be3f6)
 
 
-# jyoti_ballabgarh
+<pre> kubectl get pods -n jyoti-app -o wide </pre>
+<pre> kubectl describe pod jyoti-app-deployment-74c966b998-hr5sx -n jyoti-app </pre>
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/5684a484-ecd3-40ee-a920-9b3685664594)
+
+
+
