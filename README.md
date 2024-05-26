@@ -135,13 +135,9 @@ To add worker nodes to your Amazon EKS cluster with an IAM role, follow these st
 1. **Create IAM Role for Worker Nodes**:
    - Use the AWS IAM console to create a new IAM role for the worker nodes.
    - Attach the necessary policies to the role. Below is an example IAM policy that grants permissions required for worker nodes:
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/7c8597e9-f3dc-40a2-ba1b-1844716c62fc)
-   
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/e6b28325-b011-43df-b392-814c78c9826b)
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/0cf120da-929a-44a5-bfa8-bfa97b9e49d3)
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/78452feb-bb3c-4252-b265-0a33be921a89)
+
 ### Worker Node 
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/ceb62808-1068-4716-97a5-410e613167e6)
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/bdec1bac-b279-4efd-b9ed-c0be3839ac19)
 
 ## Creating AWS Access Keys and Configuring Terminal
 
