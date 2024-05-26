@@ -53,21 +53,21 @@ CMD [ "npm", "start" ]
 To build the Docker image for your application, run the following command:
 
 ```bash
-docker build -t k8handson .
+docker build -t jyoti .
 ```
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/3c6507ad-7bc6-48ce-b3a1-81583de14fbb)
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/c43914d7-5244-43eb-9cc7-6bacf7045ff6)
 
 ### Run the Docker Image
 
 To run the Docker image for your application, execute the following command:
 
 ```bash
-docker run -d -p 8000:8000 k8handson
+docker run -d -p 8000:8000 jyoti
 ```
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/f22386eb-30f7-4b4a-93fc-7374358ca675)
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/0c1f8d55-6a63-4819-b641-c7b1091201da)
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/3a80d1b3-26a5-472c-a944-c7a74f3ead9b)
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/84608de7-9f5a-4936-b26c-7f69819f131d)
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/701b3681-9e38-4479-a31b-005d4329a9ba)
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/20556e05-b5f8-4896-9a34-18fa2a0191bc)
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/51c33f8e-167c-465e-a47d-2dcfea395e9e)
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/01f0a93c-fea8-4865-8bb9-0e711d8dcd30)
 
 ## VPC Setup
 
@@ -98,7 +98,7 @@ We've configured a Virtual Private Cloud (VPC) named `eks-vpc` with the followin
     - NAT Gateway associated with the public subnet `eks-subnet-public1-ap-south-1a`.
 
   
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/7efc4390-64aa-4138-bc4b-5689d9893f00)
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/a8fcc6c0-0f06-4ce8-9c19-8ea82a12ad9e)
 
 ## IAM Role for Amazon EKS Cluster
 
@@ -117,18 +117,15 @@ To manage access to your Amazon EKS cluster and its resources, you need to creat
 
 Once the IAM role is created, you can use it when setting up your Amazon EKS cluster or node groups to grant the necessary permissions for managing and accessing the cluster resources.
 
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/d6926e5c-1bc3-46c7-8ce5-49d23f1f990f)
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/dd0f76b3-674e-4516-ae52-a5cf66bce345)
 
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/09cfec41-dcd7-4193-af27-e939f2513871)
-
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/947ff407-133e-4764-9e9e-6fa1ac22ab2b)
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/ace3f0ec-8c14-474d-a47a-b73e1efd61e5)
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/89d15e1c-5220-423a-b089-fa7455313454)
-
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/e14d0b61-2058-4842-92ac-5e1e15dc61a2)
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/0df0a413-e41c-40b1-8425-2e4f53483bb8)
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/b97ce839-3355-40e3-8664-a58d134ad9e4)
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/dae3f8dc-216c-4e0c-8891-5a9186b33464)
 
 ### EKS may take 10-15 minutes to reach the active state.
 
-![image](https://github.com/nageshwar50/k8shandson/assets/128671109/51814d91-ba71-4be3-ba36-dffa82ea12da)
 ## Adding Worker Nodes with IAM Role
 
 To add worker nodes to your Amazon EKS cluster with an IAM role, follow these steps:
