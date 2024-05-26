@@ -138,6 +138,7 @@ To add worker nodes to your Amazon EKS cluster with an IAM role, follow these st
 
 ### Worker Node 
 ![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/bdec1bac-b279-4efd-b9ed-c0be3839ac19)
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/d4b3b6b7-7fe6-4fd2-ae3a-266ad15fb6b7)
 
 ## Creating AWS Access Keys and Configuring Terminal
 
