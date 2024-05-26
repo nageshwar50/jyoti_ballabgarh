@@ -191,6 +191,9 @@ Default output format [None]: json
 </pre>
 ![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/9d383d8e-8f7b-4d1a-9401-8e9aee6843c7)
 
+<pre>kubectl get nodes </pre>
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/2e35dc89-3a81-44e5-88cf-40e535e83aeb)
+
 <pre> kubectl apply -f namespace.yaml </pre>
 <pre> kubectl apply -f deployment.yaml </pre>
 <pre> kubectl apply -f service.yaml -n pandey </pre>
@@ -203,11 +206,27 @@ Default output format [None]: json
 ![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/943a177a-7122-4d9b-a2d9-53230530f66f)
 ![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/3e70a6e3-a68b-4eee-bf9c-97e4923582cf)
 ![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/df33220a-252c-455b-9494-ae9a225be3f6)
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/bf3b50fc-3906-490b-907f-2317b0725496)
 
 
 <pre> kubectl get pods -n jyoti-app -o wide </pre>
 <pre> kubectl describe pod jyoti-app-deployment-74c966b998-hr5sx -n jyoti-app </pre>
 ![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/5684a484-ecd3-40ee-a920-9b3685664594)
+
+### Delete All Resource 
+<pre>
+kubectl delete -f ingress.yaml
+kubectl delete -f service.yaml
+kubectl delete -f deployment.yaml
+kubectl delete -f namespace.yaml
+</pre>
+![image](https://github.com/nageshwar50/jyoti_ballabgarh/assets/128671109/e0fae72c-b3bd-4a10-8ac6-e392929ec837)
+
+
+
+
+
+
 
 
 
